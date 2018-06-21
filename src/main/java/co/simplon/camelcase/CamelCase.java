@@ -5,7 +5,7 @@ public class CamelCase {
 	public static String camelCase(String str) {
 		String camelCaseString = "";
 		if(str != null && str.length() > 0) {
-			String[] words = str.split("; ");
+			String[] words = str.split(" ");
 			for (String word : words) {
 				camelCaseString += upperCaseWordOnFirstLetter(word);
 			}
